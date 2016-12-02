@@ -20,6 +20,9 @@
     'depends': ['website'],
     'website': 'http://turkeshpatel.odoo.com',
     'data': ['views/countdown.xml', 'views/templates.xml'],
+    'images': [
+        'static/description/icon.png',
+    ],
     'demo_xml': [],
     'css': [ '*.css' ],
     'js': ['*.js' ],
