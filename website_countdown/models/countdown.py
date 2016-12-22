@@ -13,6 +13,6 @@ class Countdown(models.AbstractModel):
 
     @api.model
     def record_to_html(self, record, field_name, options=None):
-    	return self.env['ir.qweb'].render('website_countdown.countdown', {'countdown_date':record[field_name], 'options':options})
+    	return self.env['ir.qweb'].render('website_countdown.front_countdown', {'countdown_date':record[field_name], 'options':options})
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
